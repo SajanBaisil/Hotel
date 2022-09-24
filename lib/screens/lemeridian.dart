@@ -4,9 +4,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-class LeMeridian extends StatelessWidget {
+class LeMeridian extends StatefulWidget {
   const LeMeridian({super.key});
 
+  @override
+  State<LeMeridian> createState() => _LeMeridianState();
+}
+
+class _LeMeridianState extends State<LeMeridian> {
+   int _currentindex = 0;
+    void changeindex(value) {
+      setState(() {
+        _currentindex = value;
+      });
+    }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -160,10 +171,12 @@ class LeMeridian extends StatelessWidget {
           ),
         ],
       ),
-      bottomNavigationBar: BottomNavigationBar(elevation: 0, items: [
+      bottomNavigationBar: BottomNavigationBar(elevation: 0,
+      onTap: changeindex,
+      currentIndex: _currentindex,
+       items:const [
         BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
-        BottomNavigationBarItem(
-            icon: Icon(Icons.favorite_outline), label: 'Favourite'),
+        BottomNavigationBarItem(icon: Icon(Icons.favorite_outline), label: 'Favourite'),
         BottomNavigationBarItem(icon: Icon(Icons.settings), label: 'Settings'),
       ]),
     );

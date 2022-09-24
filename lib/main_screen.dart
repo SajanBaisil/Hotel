@@ -11,6 +11,8 @@ class ScreenMain extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+   
+
     return Scaffold(
       body: CustomScrollView(
         slivers: [
@@ -22,8 +24,9 @@ class ScreenMain extends StatelessWidget {
               IconButton(
                   onPressed: () {}, icon: const Icon(Icons.favorite_outline))
             ],
-            floating: true,
+            floating: false,
             pinned: true,
+            snap: false,
             flexibleSpace: ListView(
               children: [
                 const SizedBox(
