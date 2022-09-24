@@ -139,6 +139,7 @@ class LeMeridian extends StatelessWidget {
                 ),
                 Text(
                   "With a stay at Le Meridien Kochi in Kanayannur, you'll be 6.1 mi (9.8 km) from Poornathrayesa Temple and 6.6 mi (10.7 km) from Lulu Mall. This 5-star hotel is 7.8 mi (12.5 km) from Mattancherry Palace and 9.5 mi (15.3 km) from Chinese Fishing Nets. Make yourself at home in one of the 223 individually furnished guestrooms, featuring minibars and LCD televisions. Complimentary wireless Internet access keeps you connected, and satellite programming is available for your entertainment",
+                  textAlign: TextAlign.justify,
                   style: TextStyle(
                       fontSize: 15,
                       color: Colors.black,
@@ -159,6 +160,12 @@ class LeMeridian extends StatelessWidget {
           ),
         ],
       ),
+      bottomNavigationBar: BottomNavigationBar(elevation: 0, items: [
+        BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
+        BottomNavigationBarItem(
+            icon: Icon(Icons.favorite_outline), label: 'Favourite'),
+        BottomNavigationBarItem(icon: Icon(Icons.settings), label: 'Settings'),
+      ]),
     );
   }
 }
