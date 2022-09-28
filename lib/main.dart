@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hotel/main_screen.dart';
+import 'package:hotel/pages/explore.dart';
+import 'package:hotel/screen_main.dart';
 import 'package:hotel/screens/lemeridian.dart';
 
 void main() {
@@ -12,7 +13,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-        debugShowCheckedModeBanner: false, home: ScreenMain());
+    return MaterialApp(debugShowCheckedModeBanner: false, home: ScreenMain());
   }
 }

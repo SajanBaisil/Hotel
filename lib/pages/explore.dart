@@ -6,8 +6,8 @@ import 'package:hotel/screens/lemeridian.dart';
 import 'package:hotel/widgets/cards.dart';
 import 'package:hotel/widgets/roomcards.dart';
 
-class ScreenMain extends StatelessWidget {
-  const ScreenMain({super.key});
+class ScreenExplore extends StatelessWidget {
+  const ScreenExplore({super.key});
 
   @override
   Widget build(BuildContext context) {
