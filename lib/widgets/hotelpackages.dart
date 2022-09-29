@@ -16,27 +16,28 @@ class HotelPackages extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final Size size = MediaQuery.of(context).size;
     return ClipRRect(
       borderRadius: BorderRadius.circular(20),
       child: Card(
         shadowColor: Colors.grey[300],
         elevation: 6,
         child: Container(
-          height: 150,
+          height: size.height * 0.19,
           width: double.infinity,
           color: Colors.white,
           child: Stack(
             children: [
               Container(
-                height: 150,
-                width: 130,
+                height: size.height * 0.19,
+                width: size.width * 0.33,
                 decoration: BoxDecoration(
                     image: DecorationImage(
                         fit: BoxFit.cover, image: AssetImage(hotelimage))),
               ),
               Positioned(
-                left: 140,
-                top: 20,
+                left: size.height * 0.176,
+                top: size.width * 0.05,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -95,8 +96,8 @@ class HotelPackages extends StatelessWidget {
                 ),
               ),
               Positioned(
-                top: 80,
-                left: 280,
+                top: size.width * 0.2,
+                left: size.height * 0.365,
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(15),
                   child: MaterialButton(

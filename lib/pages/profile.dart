@@ -7,16 +7,17 @@ class ProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: Column(
         children: [
           SizedBox(
-            height: 350,
+            height: size.height * 0.45,
             child: Stack(
               children: [
                 Container(
                   margin: const EdgeInsets.only(bottom: 60),
-                  height: 250,
+                  height: size.height * 0.35,
                   width: double.infinity,
                   decoration: const BoxDecoration(
                       color: Colors.blue,
@@ -39,16 +40,16 @@ class ProfileScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                const Positioned(
-                  left: 120,
-                  top: 180,
+                Positioned(
+                  left: size.height * 0.15,
+                  top: size.width * 0.45,
                   child: CircleAvatar(
                       radius: 80,
                       backgroundImage: AssetImage('assets/images.jpg')),
                 ),
                 Positioned(
-                  left: 120,
-                  top: 290,
+                  left: size.height * 0.15,
+                  top: size.width * 0.73,
                   child: CircleAvatar(
                     backgroundColor: Colors.white,
                     radius: 18,
@@ -67,13 +68,14 @@ class ProfileScreen extends StatelessWidget {
               ],
             ),
           ),
-          const Text(
+          Text(
             'SAJAN BAISIL',
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            style: TextStyle(
+                fontWeight: FontWeight.bold, fontSize: size.height * 0.03),
           ),
           const Text('sajanbaisil12@gmail.com'),
-          const SizedBox(
-            height: 20,
+          SizedBox(
+            height: size.height * 0.03,
           ),
           Padding(
             padding: const EdgeInsets.only(left: 15, right: 15, top: 5),
@@ -88,8 +90,8 @@ class ProfileScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(12)),
                     child: ListTile(
                       leading: Container(
-                        height: 50,
-                        width: 50,
+                        height: size.height * 0.06,
+                        width: size.width * 0.13,
                         decoration: BoxDecoration(
                             color: Colors.blue[100],
                             borderRadius: BorderRadius.circular(12)),
@@ -113,8 +115,8 @@ class ProfileScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(12)),
                     child: ListTile(
                         leading: Container(
-                          height: 50,
-                          width: 50,
+                          height: size.height * 0.06,
+                          width: size.width * 0.13,
                           decoration: BoxDecoration(
                               color: Colors.blue[100],
                               borderRadius: BorderRadius.circular(12)),
@@ -147,8 +149,8 @@ class ProfileScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(12)),
                     child: ListTile(
                       leading: Container(
-                        height: 50,
-                        width: 50,
+                        height: size.height * 0.06,
+                        width: size.width * 0.13,
                         decoration: BoxDecoration(
                             color: Colors.blue[100],
                             borderRadius: BorderRadius.circular(12)),
@@ -172,8 +174,8 @@ class ProfileScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(12)),
                     child: ListTile(
                       leading: Container(
-                        height: 50,
-                        width: 50,
+                        height: size.height * 0.06,
+                        width: size.width * 0.13,
                         decoration: BoxDecoration(
                             color: Colors.blue[100],
                             borderRadius: BorderRadius.circular(12)),
