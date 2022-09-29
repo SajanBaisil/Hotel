@@ -1,3 +1,5 @@
+![hotelui](https://user-images.githubusercontent.com/108852458/192830181-2aa82ccb-a63b-4032-a841-ec4eba15202e.jpg)
+![hotelui2](https://user-images.githubusercontent.com/108852458/192830219-b8858890-e8e2-4fde-8001-a8550f26be4e.jpg)
 
 ![hotel_mainScreen](https://user-images.githubusercontent.com/108852458/192082992-acb1a0e3-3de6-416f-bfef-d326434a575c.jpg)
 ![hotel_booking](https://user-images.githubusercontent.com/108852458/192083465-3a18deca-0e87-4bc3-b638-beb8a67e437e.jpg)
